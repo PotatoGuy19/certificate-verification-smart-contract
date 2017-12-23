@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>FYP | Verify</title>
+    <script type="text/javascript" src="handle.js"></script>
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+
+  <body>
+
+    <p class="title">Upload Your Certificates to the Blockchain</p>
+
+    <div class="center">
+      <a href="index.html"><button class="nav">About</button></a>
+      <a href="submit.html"><button class="nav">Submit</button></a>
+      <a href="verify.html"><button class="nav">Verify</button></a>
+    </div>
+
+    <div class="box verify">
+      <form>
+        <h3>IPFS address (make sure it is correct)</h3>
+        <input id="ipfsVerify" type="text">
+        <input type="button" value="VERIFY" onClick="issSearch(); recSearch();">
+      </form>
+
+      <h3>Issuer of certificate</h3>
+      <p id="issVerify"></p><br>
+
+      <h3>Recepient of certificate</h3>
+      <p id="recVerify"></p>
+    </div>
+
+
+  </body>
+</html>

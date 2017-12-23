@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>FYP | Submit</title>
+    <script type="text/javascript" src="handle.js"></script>
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+
+  <body onLoad="renderSubmit()">
+
+    <p class="title">Upload Your Certificates to the Blockchain</p>
+
+    <div class="center">
+      <a href="index.html"><button class="nav">About</button></a>
+      <a href="submit.html"><button class="nav">Submit</button></a>
+      <a href="verify.html"><button class="nav">Verify</button></a>
+    </div>
+
+
+    <div class="box submit1">
+      <h3 id="ipfsTest">IPFS multi-hash</h3>
+      <input id="file" type="text">
+
+      <h3>Issuer address</h3>
+      <select id="issuer">
+        <option id="iss0"></option>
+        <option id="iss1"></option>
+        <option id="iss2"></option>
+        <option id="iss3"></option>
+        <option id="iss4"></option>
+        <option id="iss5"></option>
+        <option id="iss6"></option>
+        <option id="iss7"></option>
+        <option id="iss8"></option>
+        <option id="iss9"></option>
+      </select>
+
+      <h3>Recipient address</h3>
+      <select id="recipient">
+        <option id="rec0"></option>
+        <option id="rec1"></option>
+        <option id="rec2"></option>
+        <option id="rec3"></option>
+        <option id="rec4"></option>
+        <option id="rec5"></option>
+        <option id="rec6"></option>
+        <option id="rec7"></option>
+        <option id="rec8"></option>
+        <option id="rec9"></option>
+      </select>
+
+      <input type="button" value="SUBMIT" onClick="sendSubmit(); uploadSubmit();">
+    </div>
+
+    <div class="box submit2">
+      <h3>Transaction receipt</h3>
+      <p id="ipfs_addr"></p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "test-eth-ipfs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "deploy": "node deploy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "interface-ipfs-core": "^0.36.11",
+    "ipfs-js": "0.0.11",
+    "web3": "^1.0.0-beta.26"
+  }
+}
